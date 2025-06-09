@@ -1,13 +1,13 @@
 import React from 'react';
-import { TestDiv } from './styled';
+import { PageWrapper } from '../../App.styled';
 
 const HomePage: React.FC = () => {
     return (
         <>
             <title>Главная - MW Marketplace</title>
-
-            <h1>dd</h1>
-            <TestDiv />
+            <PageWrapper>
+                <h1>dd</h1>
+            </PageWrapper>
         </>
     );
 };
