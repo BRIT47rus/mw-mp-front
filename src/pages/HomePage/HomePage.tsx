@@ -15,6 +15,13 @@ const HomePage: React.FC = () => {
                     <ProductGroupContainer>
                         {dummyProducts.map((p) => (
                             <ProductCard
+                                imgSrc={p.imgSrc}
+                                id={p.id}
+                                priceRegular={p.priceRegular}
+                                priceDiscounted={p.priceDiscounted}
+                                title={p.title}
+                                desc={p.desc}
+                                hideLikes={false}
                                 {...p}
                                 key={p.id}
                                 // isLiked={idsInFavorites.inclides(p.id)}
