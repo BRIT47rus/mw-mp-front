@@ -1,8 +1,9 @@
 import React from 'react';
 import { PageWrapper } from '../../App.styled';
 import { ProductGroup, ProductGroupContainer } from './styled';
-import { dummyProducts } from '../ProductDetaisPage/dummyProducts';
+
 import ProductCard from '../../blocks/ProductCard/ProductCard';
+import { dummyProducts } from '../ProductDetaisPage/dummyProducts';
 
 const HomePage: React.FC = () => {
     return (
@@ -22,7 +23,7 @@ const HomePage: React.FC = () => {
                                 title={p.title}
                                 desc={p.desc}
                                 hideLikes={false}
-                                {...p}
+                                // {...p}
                                 key={p.id}
                                 // isLiked={idsInFavorites.inclides(p.id)}
                             />
