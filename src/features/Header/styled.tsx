@@ -12,3 +12,16 @@ export const Wrapper = styled.div`
     z-index: ${Z_INDEX_LEVEL_2};
     color: #fff;
 `;
+export const UserAvatarWrapper = styled.div`
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+`;
+export const UserProfileDropdown = styled.div`
+    div {
+        cursor: pointer;
+        line-height: 1.8;
+    }
+`;
