@@ -1,20 +1,15 @@
 import styled from 'styled-components';
 import colors from '../../consts/colors';
 
-export const Image = styled.img`
-    margin-bottom: 10px;
-    width: 100%;
-    height: 165px;
-    border-radius: 4px;
-    object-fit: scale-down;
-`;
 export const PriceWrapper = styled.div`
+    background: #000; //3333
     display: flex;
     align-items: flex-end;
     margin-bottom: 10px;
 `;
 
 export const PriceRegular = styled.div`
+    background: #000; //3333
     font-size: 18px;
     font-weight: 700;
     margin-right: 10px;
@@ -52,4 +47,11 @@ export const LikeWrapper = styled.div`
     svg {
         pointer-events: none;
     }
+`;
+export const Image = styled.img`
+    margin-bottom: 10px;
+    width: 100%;
+    height: 165px;
+    border-radius: 4px;
+    object-fit: scale-down;
 `;

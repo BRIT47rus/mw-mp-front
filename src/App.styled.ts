@@ -55,6 +55,7 @@ p,li{
 `;
 export const PageWrapper = styled.div`
     padding: 20px;
+
     min-height: calc(100vh - ${HEADER_HEIGHT}px - ${FOOTER_HEIGHT}px);
 `;
 

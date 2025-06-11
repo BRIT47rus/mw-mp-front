@@ -4,7 +4,7 @@ import type { I_AppStore } from './types';
 
 //I_AppStore
 const initialState: I_AppStore = {
-    isLogged: false,
+    isLogged: true,
     isAppLoading: false,
 };
 export const isLoggedReducer: T_Reducer<I_AppStore, boolean> = (
@@ -29,7 +29,7 @@ const appSlice = createSlice({
     },
 });
 
-const { isLogged: setLoggedAction, isAppLoading: seIsAppLoadingAction } =
+const { isLogged: setLoggedAction, isAppLoading: setIsAppLoadingAction } =
     appSlice.actions;
 
 export const setIsLogged =
@@ -40,6 +40,6 @@ export const setIsLogged =
 export const setIsAppLoading =
     (isAppLoading: boolean): T_AppThunk =>
     (dispatch: Dispatch) => {
-        dispatch(seIsAppLoadingAction(isAppLoading));
+        dispatch(setIsAppLoadingAction(isAppLoading));
     };
 export default appSlice.reducer;
